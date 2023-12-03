@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f3eae3;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  background-color: #fff;
+  display: flex;
+  max-width: 800px;
+  border-radius: 20px;
+}
+.product__fragrance--desktop {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.product__fragrance--mobile {
+  display: none;
+}
+.product__details {
+  width: 60%;
+  margin: 40px;
+}
+.product__title {
+  color: #6f6f79;
+  letter-spacing: 0.3em;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.product__info {
+  font-weight: bold;
+  line-height: 1;
+  font-size: 4.5rem;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+.product__description {
+  color: #6f6f79;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+.product__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.product__price--total {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #3d8168;
+}
+.product__price--discount {
+  font-size: 1.8rem;
+  color: #6f6f79;
+  text-decoration: line-through;
+  padding-right: 80px;
+}
+.product__add {
+  padding: 20px 95px;
+  background-color: #3d8168;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  border: none;
+}
+.product__add--cart {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  
+  body{
+    height: 150vh;
+  }
+  .product {
+    flex-direction: column;
+    margin: 20px 60px;
+  }
+  .product__fragrance--desktop {
+    display: none;
+  }
+  .product__fragrance--mobile {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 15px;
+  }
+  .product__details {
+    width: 100%;
+    margin: 20px;
+  }
+  .product__info {
+    line-height: 1;
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  .product__description {
+    color: #6f6f79;
+    font-size: 1.8rem;
+    max-width: 500px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-right: 20px;
+  }
+  .product__add {
+    padding: 20px 140px;
+    background-color: #3d8168;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: none;
+  }
+}
+@media (max-width: 550px) {
+  body {
+    background-color: #f3eae3;
+    height: 110vh;
+  }
+  .product {
+    flex-direction: column;
+    margin: 20px 60px;
+  }
+  .product__fragrance--desktop {
+    display: none;
+  }
+  .product__fragrance--mobile {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top: 15px;
+  }
+  .product__details {
+    width: 100%;
+    margin: 20px;
+  }
+  .product__info {
+    line-height: 1;
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  .product__description {
+    color: #6f6f79;
+    font-size: 1.6rem;
+    max-width: 300px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    padding-right: 34px;
+  }
+  .product__add {
+    padding: 20px 80px;
+    background-color: #3d8168;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: none;
+  }
+}
